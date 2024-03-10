@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffeff;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    align-self: center;
+}
+
+h1{
+    align-content: center;
+    text-align: center;
+    color: #ffffff ;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.option {
+    margin: 10px;
+    padding: 20px;
+    background-color:#ffffff ;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.option:hover {
+    background-color: #ccc;
+}
+.option h2 {
+    text-align: center;
+    color: #100f6f;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+       <h1> <p class="text"> CHOOSE THE EVENT</p></h1>
+        <div class="options">
+
+            <div class="option" onclick="selectTemplate('taskPlanning')">
+                <h2>Task Planning</h2>
+                <a href="todo">Plan and organize your daily tasks</a>
+                
+            </div>
+            <div class="option" onclick="selectTemplate('academic')">
+                <h2>Academic</h2>
+                <a href="">Keep track of your academic assignments and deadlines</a>
+            </div>
+            <div class="option" onclick="selectTemplate('office')">
+                <h2>Office</h2>
+                <a href="">Manage office-related tasks and projects</a>
+            </div>
+            <!-- Add more template options as needed -->
+            <div class="option" onclick="selectTemplate('personal')">
+                <h2>Personal</h2>
+                <a href="">Manage your personal events</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function selectTemplate(templateName) {
+            // Redirect to todo.html regardless of the selected template
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

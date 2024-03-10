@@ -1,0 +1,42 @@
+* {
+    margin: 50;
+    padding: 20;
+    box-sizing: content-box;
+    font-family: "Noto Sans TC", sans-serif;
+  }
+
+.container { 
+    align-items: center;
+    text-align: center;
+}
+
+.text
+{ font-size: 33px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 10px;
+    border-right: 5px solid black;
+    white-space: nowrap;
+    animation: typing 4s steps(16),
+    cursor .4s step-end infinite alternate;
+    overflow: hidden;
+    animation-fill-mode: forwards;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+
+@keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  
+    to {
+      width: 65%;
+    }
+}
